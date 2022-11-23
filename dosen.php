@@ -1,35 +1,69 @@
+<?php
+    session_start();
+?>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Tambah Data Mahasiswa</title>
+    <title>dosen</title>
 </head>
+
 <body>
-    <h2>Tambah Data Mahasiswa</h2>
-    <form action="ctrl_mahasiswa.php?act=tambah" method="POST">
-    <table border ="1">
-        <tr>
-            <td>NIM Mahasiswa</td>
-            <td> :  <input type="text" name="txt_nim"></td>
-        </tr>
-        <tr>
-            <td>Nama Mahasiswa</td>
-            <td> : <input type="text" name="txt_nama"></td>
-        </tr>
-        <tr>
-            <td>Alamat</td>
-            <td> : <input type="text" name="txt_alamat"></td>
-        </tr>
-        <tr>
-            <td>Telepon</td>
-            <td> : <input type="text" name="txt_tlp"></td>
-        </tr>
-        <tr>
-            <td>Email</td>
-            <td> : <input type="text" name="txt_email"></td>
-        </tr>
-        <tr>
-            <td><input type="Submit" value="Save"> <input type="button" value="Back" onclick=self.history.back()></td>
-        </tr>
-    </table>
-    </form>
+        <h2>Data Dosen <br></h2>
+        <form action="" method="post">
+            <div class="box">
+                <table>
+                    <tr>
+                        <td> Nama Lengkap</td>
+                        <td>:</td>
+                        <td>
+                            <input type="text" name="nama" class="input-control">
+                        </td>
+                    <tr>
+                        <td> Tempat Lahir</td>
+                        <td>:</td>
+                        <td>
+                            <input type="text" name="tempat_lahir" class="input-control">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Tanggal Lahir</td>
+                        <td>:</td>
+                        <td>
+                            <input type="date" name="tanggal_lahir" class="input-control">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Jenis Kelamin</td>
+                        <td>:</td>
+                        <td>
+                            <input type="radio" name="jenis_kelamin" class="input-control" value="Laki-laki"> Laki-laki &nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="jenis_kelamin" class="input-control" value="Perempuan"> Perempuan
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Agama</td>
+                        <td>:</td>
+                        <td>
+                            <input type="text" name="agama" class="input-control">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> No HP</td>
+                        <td>:</td>
+                        <td>
+                            <input type="text" name="agama" class="input-control">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Tahun Kelulusan</td>
+                        <td>:</td>
+                        <td>
+                            <input type="text" name="agama" class="input-control">
+                        </td>
+                    </tr>
+            </div>
+    </div>
+    
 </body>
 </html>
